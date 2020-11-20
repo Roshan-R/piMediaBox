@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Box-links</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="middle-box">
+				<div class="boxcontent">
+					<h1>Hello, hooman!</h1>
+					<div class="cards">
+						<div class="card card1" onclick="window.location = 'https://www.youtube.com'"></div>
+						<div class="card card2" onclick="window.location = 'https://www.netflix.com'"></div>
+						<div class="card card3" onclick="window.location = 'https://www.primevideo.com'"></div>
+						<div class="card card4" onclick="window.location = 'https://open.spotify.com'"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style>
+body{
+	margin: 0;
+	padding: 0;
+}
+    .page-wrapper{
+	    margin: 0;
+	    padding: 0;
+	    background-color: #1f1f1f;
+	    height: 100vh;
+	    width: 100vw;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+    }
+    .middle-box{
+	    "background-color: #0f0f0f;"
+
+    }
+    .boxcontent{
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    padding: 30px;
+	    padding-left:70px;
+	    padding-right:70px;
+    }
+    h1{
+	    padding: 10;
+	    margin: 0;
+	    margin-bottom:20px;
+	    font-family: sans-serif;
+	    color: #f0f8ff;
+	    font-weight: normal;
+    }
+    .cards{
+	    display: flex;
+	    justify-content: center;
+	    gap: 30px;
+    }
+    .card{
+	    display: block;
+	    border-radius:7px;
+	    height: 200px;
+	    width: 170px;
+	    padding:10px;
+    }
+    .card:hover{
+	    box-shadow: #000000 3px 3px 3px;
+	    cursor: pointer;
+	    transition: all .10s;
+    }
+    .card:active{
+	    box-shadow: #000000 4px 4px 2px;
+	    cursor: pointer;
+	    transition: all .10s;
+    }
+    .card1{
+	    background: url(imgs/youtube.png) no-repeat #ffffff;
+	    background-size: 180px;
+	    background-position: center;
+    }
+    .card2{
+	    background: url(imgs/netflix.png) no-repeat #ffffff;
+	    background-size: 80px;
+	    background-position: center;
+    }
+    .card3{
+	    background: url(imgs/primevideo.png) no-repeat #ffffff;
+	    background-size: 180px;
+	    background-position: center;
+    }
+    .card4{
+	    background: url(imgs/spotify.png) no-repeat #000000;
+	    background-size: 80px;
+	    background-position: center;
+    }
+
+
+	</style>
+</html>
