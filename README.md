@@ -11,3 +11,6 @@ curl -fsSL https://pi.vpetkov.net -o ventz-media-pi
 sh ventz-media-pi
 ```
 once that is done, clone this repo and execute setup.sh, install and enjoy
+
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/Roshan-R/piMediaBox/main/Screenshot.png)
